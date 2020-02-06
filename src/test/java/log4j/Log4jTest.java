@@ -9,6 +9,7 @@ import org.junit.Test;
  */
 public class Log4jTest {
 
+
     @Test
     public void testQuick() {
 
@@ -18,17 +19,15 @@ public class Log4jTest {
         Logger logger = Logger.getLogger(Log4jTest.class);
         logger.info("hello log4j");
 
-        for (int i = 0; i < 10000; i++) {
-            //日志级别
-            logger.fatal("fatal");
+        //日志级别
+        logger.fatal("fatal");
 
-            logger.error("error");
-            logger.warn("warn");
-            logger.info("info");
-            logger.debug("debug");
+        logger.error("error");
+        logger.warn("warn");
+        logger.info("info");
+        logger.debug("debug");
 
-            logger.trace("trace");
-        }
+        logger.trace("trace");
     }
 
 }
